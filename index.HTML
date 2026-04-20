@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>متجر الأحذية</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        .product img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+
+        .btn {
+            background: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #444;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>👟 متجر الأحذية</h1>
+    </header>
+
+    <nav>
+        <a href="#">الرئيسية</a>
+        <a href="#">رجالي</a>
+        <a href="#">نسائي</a>
+        <a href="#">تواصل</a>
+    </nav>
+
+    <div class="container">
+        <h2>أحدث المنتجات</h2>
+
+        <div class="products">
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1528701800489-20be3c3c6c42" alt="حذاء">
+                <h3>حذاء رياضي</h3>
+                <p class="price">250 ريال</p>
+                <button class="btn">أضف للسلة</button>
+            </div>
+
+            <div class="product">
+                <img src="https://sl.bing.net/DEkaNfIkAS" alt="حذاء">
+                <h3>حذاء كلاسيك</h3>
+                <p class="price">300 ريال</p>
+                <button class="btn">أضف للسلة</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="حذاء">
+                <h3>حذاء جري</h3>
+                <p class="price">220 ريال</p>
+                <button class="btn">أضف للسلة</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="حذاء">
+                <h3>حذاء كاجوال</h3>
+                <p class="price">180 ريال</p>
+                <button class="btn">أضف للسلة</button>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 متجر الأحذية - جميع الحقوق محفوظة</p>
+    </footer>
+
+</body>
+
+</html>
