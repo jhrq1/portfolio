@@ -1,5 +1,58 @@
 <!doctype html>
-<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#191915"><title>Cloud Bites | كلاود بايتس</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head>
-<body><header class="header"><div class="wrap nav"><a class="brand" href="#home" aria-label="الرئيسية"><span class="brand-icon">CB<span>.</span></span><span>CLOUD<br>BITES<span class="dot">.</span></span></a><nav aria-label="القائمة الرئيسية"><a href="#home" data-nav="home">الرئيسية</a><a href="#menu" data-nav="menu">المنيو</a><a href="#about" data-nav="about">عن المطعم</a><a href="#help" data-nav="help">المساعدة</a></nav><a class="cart-button" href="#cart" data-nav="cart" aria-label="سلة الطلبات"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 4h2l2 12h12l2-9H6M9 21h.01M18 21h.01" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="cart-label">السلة</span><span id="cartCount" class="count">0</span></a></div></header>
-<main id="app" tabindex="-1"><noscript>يرجى تفعيل JavaScript لعرض صفحات المطعم.</noscript></main>
-<footer class="footer"><div class="wrap footer-inner"><a class="brand" href="#home"><span class="brand-icon">CB<span>.</span></span><span>CLOUD<br>BITES<span class="dot">.</span></span></a><p>كلاود بايتس • مطبخ سحابي<br><small>متجر تجريبي — لا يرسل طلبات فعلية</small></p><div class="footer-links"><a href="#menu">المنيو</a><a href="#about">عن المطعم</a><a href="#help">المساعدة</a></div></div></footer><div id="toast" role="status" class="toast"></div></body></html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>أرامكو السعودية | الصفحة الرئيسية</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="الصفحة الرئيسية لأرامكو">
+      <img src="assets/logo.jpg" alt="شعار أرامكو السعودية">
+      <span>أرامكو السعودية</span>
+    </a>
+    <nav aria-label="التنقل الرئيسي">
+      <a class="active" href="index.html" aria-current="page">الرئيسية</a>
+      <a href="register.html">التسجيل</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">الطاقة تصنع الفرق</p>
+        <h1>نحو مستقبل<br>أكثر طاقة واستدامة</h1>
+        <p>تعرّف على أرامكو السعودية ومجالات عملها في الطاقة والبتروكيماويات، وعلى جهودها في التقنية والسلامة وحماية البيئة.</p>
+        <a class="button" href="register.html">سجّل اهتمامك <span aria-hidden="true">←</span></a>
+      </div>
+      <div class="hero-mark"><img src="assets/logo.jpg" alt="شعار أرامكو السعودية"></div>
+    </section>
+
+    <section class="content-section" aria-labelledby="about-title">
+      <p class="eyebrow">من نحن</p>
+      <h2 id="about-title">نبذة عن أرامكو</h2>
+      <p class="lead">أرامكو السعودية شركة وطنية تعمل في مجال الطاقة والبتروكيماويات، ويقع مقرها الرئيس في مدينة الظهران. تسهم الشركة في توفير الطاقة وتطوير حلول تدعم الاقتصاد والمجتمع.</p>
+      <div class="cards">
+        <article class="card"><span class="card-number">01</span><h3>الطاقة</h3><p>الاستكشاف والإنتاج، ثم تكرير المنتجات وتوزيعها.</p></article>
+        <article class="card"><span class="card-number">02</span><h3>التقنية</h3><p>تستثمر في البحث والابتكار لتطوير عملياتها وخدمة عملائها.</p></article>
+        <article class="card"><span class="card-number">03</span><h3>المسؤولية</h3><p>تولي السلامة وحماية البيئة اهتمامًا في أعمالها.</p></article>
+      </div>
+    </section>
+
+    <section class="content-section media-section" aria-labelledby="video-title">
+      <div>
+        <p class="eyebrow">شاهد</p>
+        <h2 id="video-title">مقطع تعريفي</h2>
+        <p>يمكنك تشغيل الفيديو من مشغل الصفحة.</p>
+      </div>
+      <video controls preload="metadata" playsinline>
+        <source src="assets/promo.mp4" type="video/mp4">
+        عذرًا، متصفحك لا يدعم تشغيل الفيديو.
+      </video>
+    </section>
+  </main>
+
+  <footer><span>أرامكو السعودية</span><a href="register.html">انتقل إلى صفحة التسجيل ←</a></footer>
+</body>
+</html>
